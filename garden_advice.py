@@ -5,7 +5,7 @@ plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
 # Variable to hold gardening advice
 advice = ""
 
-# Determine advice based on the season
+# Determine advice based on the season through an if/else statements.
 if season == "summer":
     advice += "Water your plants regularly and provide some shade.\n"
 elif season == "winter":
@@ -13,7 +13,7 @@ elif season == "winter":
 else:
     advice += "No advice for this season.\n"
 
-# Determine advice based on the plant type
+# Determine advice based on the plant type through if/else stateemnts.
 if plant_type == "flower":
     advice += "Use fertiliser to encourage blooms."
 elif plant_type == "vegetable":
