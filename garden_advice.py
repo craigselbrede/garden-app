@@ -1,3 +1,21 @@
+def season_advice(season):
+    if season == "summer":
+        advice += "Water your plants regularly and provide some shade.\n"
+    elif season == "winter":
+        advice += "Protect your plants from frost with covers.\n"
+    else:
+        advice += "No advice for this season.\n"
+
+
+def plant_advice(plant_type):
+    if plant_type == "flower":
+        advice += "Use fertiliser to encourage blooms."
+    elif plant_type == "vegetable":
+        advice += "Keep an eye out for pests!"
+    else:
+        advice += "No advice for this type of plant."
+
+
 # Hardcoded values for the season and plant type
 season = "summer"  # TODO: Replace with input() to allow user interaction.
 plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
@@ -6,20 +24,10 @@ plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
 advice = ""
 
 # Determine advice based on the season through an if/else statements.
-if season == "summer":
-    advice += "Water your plants regularly and provide some shade.\n"
-elif season == "winter":
-    advice += "Protect your plants from frost with covers.\n"
-else:
-    advice += "No advice for this season.\n"
+season_advice(season)
 
 # Determine advice based on the plant type through if/else stateemnts.
-if plant_type == "flower":
-    advice += "Use fertiliser to encourage blooms."
-elif plant_type == "vegetable":
-    advice += "Keep an eye out for pests!"
-else:
-    advice += "No advice for this type of plant."
+plant_advice(plant_type)
 
 # Print the generated advice
 print(advice)
