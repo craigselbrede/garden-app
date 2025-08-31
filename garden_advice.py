@@ -23,10 +23,10 @@ plant_type = "flower"  # TODO: Replace with input() to allow user interaction.
 # Variable to hold gardening advice
 advice = ""
 
-# Determine advice based on the season
+# Determine advice based on the season through an if/else statements.
 season_advice(season)
 
-# Determine advice based on the plant type
+# Determine advice based on the plant type through if/else stateemnts.
 plant_advice(plant_type)
 
 # Print the generated advice
